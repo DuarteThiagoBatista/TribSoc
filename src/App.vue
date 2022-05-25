@@ -1,41 +1,32 @@
 <template>
-  <header>
-    <LogoEmpresa />
-  </header>
-  <v-lazy>
-    <v-row justify="center">
-      <div class="caixa"><ConversorCaixa/></div>
-      <!-- <div>{{ getBackData() }}</div> -->
-    </v-row>
-  </v-lazy>
-  <!-- <Footer /> -->
+  <v-app>
+    <v-main>
+      <header>
+        <LogoComponent />
+      </header>
+      <MenuComponent />
+      <router-view/>
+    </v-main>
+    <FooterComponent />
+  </v-app>
 </template>
 
 <script>
-import LogoEmpresa from "./components/LogoEmpresa.vue";
-import ConversorCaixa from "./components/ConversorCaixa.vue";
-// import Footer from "./components/FooterComponent.vue";
+import MenuComponent from "./components/MenuComponent.vue"
+import FooterComponent from "./components/FooterComponent.vue"
+import LogoComponent from "./components/LogoComponent.vue"
 
 export default {
-  name: "App",
+  name: 'App',
 
   components: {
-    ConversorCaixa,
-    LogoEmpresa,
-    // Footer,
+    MenuComponent,
+    FooterComponent,
+    LogoComponent,
   },
 
   data: () => ({
-
+    home: false,
   }),
-  methods: {
-
-  },
-  onBeforeMounted() {
-    this.getBackData();
-  },
-  onMounted() {
-    console.log(this.getBackData());
-  }
 }
 </script>
