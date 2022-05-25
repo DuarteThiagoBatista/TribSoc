@@ -1,4 +1,6 @@
-# teste-soc
+
+# tribsoc
+
 
 ## Project setup
 ```
