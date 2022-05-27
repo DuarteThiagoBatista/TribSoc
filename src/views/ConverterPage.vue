@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import LogoEmpresa from "../components/LogoComponent.vue";
 import ConversorCaixa from "../components/ConverterComponent.vue";
 
 export default {
