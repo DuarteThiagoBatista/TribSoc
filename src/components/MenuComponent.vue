@@ -25,7 +25,7 @@
 <script>
 import logo from "/public/logo.png";
 export default {
-    name: "menu",
+    name: "menuComponent",
 
     data: () =>({
         logo,

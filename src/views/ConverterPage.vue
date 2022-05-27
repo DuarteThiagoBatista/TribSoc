@@ -13,7 +13,6 @@ import ConversorCaixa from "../components/ConverterComponent.vue";
 export default {
   components: {
     ConversorCaixa,
-    LogoEmpresa,
   },
 
   data: () => ({}),
