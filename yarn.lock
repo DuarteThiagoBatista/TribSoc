@@ -5958,20 +5958,6 @@ vue@^3.2.13:
     "@vue/server-renderer" "3.2.33"
     "@vue/shared" "3.2.33"
 
-webpack-plugin-vuetify@^2.0.0-alpha.0:
-  version "2.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/vuetify-webpack-plugin-vuetify/-/vuetify-webpack-plugin-vuetify-2.0.0-alpha.9.tgz#0a108b1ac11fc8af63046b16321505b444c04746"
-  integrity sha512-M4u2XX9coe1U51jLKek54eJTo7wnroNfglh6sQplRTslhQRKQM3k84oh87D0VHqTzoTzlKPHP0sIWdpklwaEEQ==
-  dependencies:
-    "@vuetify/loader-shared" "^1.3.0"
-    decache "^4.6.0"
-    file-loader "^6.2.0"
-    find-cache-dir "^3.3.2"
-    loader-utils "^2.0.0"
-    null-loader "^4.0.1"
-    querystring "^0.2.1"
-    upath "^2.0.1"
-
 vuetify@^3.0.0-beta.0:
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-beta.2.tgz#0dc25b653da1339654d7f015ed2074072210cc6b"

@@ -4,7 +4,6 @@ module.exports = defineConfig({
 
   pluginOptions: {
     vuetify: {
-			// https://github.com/vuetifyjs/webpack-plugin-vuetify/tree/next/packages/webpack-plugin-vuetify
 		}
   }
 })
