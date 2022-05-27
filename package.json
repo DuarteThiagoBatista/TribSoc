@@ -31,7 +31,7 @@
     "sass": "^1.38.0",
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.5.0",
-    "vuetify-loader": "^2.0.0-alpha.0"
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   },
   "eslintConfig": {
     "root": true,
