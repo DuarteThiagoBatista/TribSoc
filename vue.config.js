@@ -5,5 +5,7 @@ module.exports = defineConfig({
   pluginOptions: {
     vuetify: {
 		}
-  }
+  },
+
+  lintOnSave: false
 })
