@@ -1,0 +1,4 @@
+@use '../../styles/settings';
+@use '../../styles/tools';
+
+$btn-toggle-selected-opacity: var(--v-activated-opacity) !default;

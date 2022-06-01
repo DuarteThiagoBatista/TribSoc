@@ -1,0 +1,51 @@
+@forward './variables'
+@use 'sass:math'
+@use 'sass:selector'
+@use '../../styles/settings'
+@use '../../styles/tools'
+@use './variables' as *
+@use '../VInput/variables' as *
+
+.v-textarea
+  .v-field__input
+    flex: 1 1 auto
+    line-height: $textarea-line-height
+    outline: none
+    mask-image: linear-gradient(to bottom, transparent, transparent calc(var(--v-field-padding-top, 0) / 1.25), black var(--v-field-padding-top, 0))
+
+  &--auto-grow
+    .v-field__input
+      overflow: hidden
+
+  &--no-resize
+    .v-field__input
+      resize: none
+
+  &__sizer
+    visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+    height: 0 !important
+    pointer-events: none
+
+  .v-field--has-label
+    textarea
+      opacity: 0
+
+  .v-field--active
+    textarea
+      opacity: 1
+
+  textarea
+    flex: 1
+    min-width: 0
+    transition: .15s opacity settings.$standard-easing
+
+    &:focus,
+    &:active
+      outline: none
+
+    // Remove Firefox red outline
+    &:invalid
+      box-shadow: none

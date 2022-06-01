@@ -1,0 +1,53 @@
+@forward './variables'
+@use 'sass:selector'
+@use 'sass:math'
+@use '../../styles/settings'
+@use '../../styles/tools'
+@use './variables' as *
+@use '../VInput/variables' as *
+
+.v-select
+  .v-field
+    .v-text-field__prefix,
+    .v-text-field__suffix,
+    .v-field__input,
+    &.v-field
+      cursor: pointer
+
+  .v-field
+    .v-field__input
+      > input
+        align-self: flex-start
+        opacity: 0
+        flex: 0 0
+
+    .v-field__append-inner
+      > .v-icon
+        margin-inline-start: 4px
+        transition: $select-transition
+
+  .v-field--dirty
+    .v-select__selection
+      margin-inline-end: 2px
+
+  &__content
+    overflow: hidden
+
+    @include tools.elevation($select-content-elevation)
+    @include tools.rounded($select-content-border-radius)
+
+  &__selection
+    display: inline-flex
+    letter-spacing: inherit
+    line-height: inherit
+
+  &--active-menu
+    .v-field__append-inner
+      > .v-icon
+        opacity: var(--v-high-emphasis-opacity)
+        transform: rotate(180deg)
+
+  &--chips
+    .v-select__selection
+      &:first-child
+        margin-inline-start: 0
