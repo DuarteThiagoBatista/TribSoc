@@ -1,0 +1,111 @@
+.info{
+    font-size: 13pt;
+  }
+  
+  .box{
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 15px;
+    width: 50px;
+  }
+
+  
+  .caixa {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    width: 500px;
+    background-color: white;
+    justify-content: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img {
+    /* width: 400px; */
+    height: 120px;
+  }
+  
+  .footer {
+    margin-top: 153px;
+    padding: 10px;
+    color: #1C3762;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    color: white;
+  }
+  
+  .input {
+    width: 100%;
+  }
+  
+  .resultado {
+    font-size: 30px;
+    color: #1C3762;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .job-type{
+    font-size: 10pt;
+    padding: 5px; width: fit-content;
+    border-radius: 10px;
+    outline: auto;
+    color: #3eabda;
+    margin-right: 5px;
+  
+  }
+  
+  .titulo {
+    font-size: 20px;
+    background-color: white;
+    color: #3eabda;
+  
+  }
+  
+  .grande {
+    font-size: 30px;
+  }
+  
+  .valor {
+    background-color: rgb(63, 172, 218, 0.28);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* width: fit-content; */
+    /* margin-left: 400px; */
+  }
+
+  .v-toolbar__content{
+    display:flex;
+    justify-content: center;
+  }
+  .v-main__wrap{
+    background-color: whitesmoke;
+  }
+
+  .v-messages__message{
+    margin-right: 42px;
+  }
+  
+  header {
+    display: flex;
+    /*justify-items: center;*/
+    margin: 50px;
+    align-items: center;
+  }
