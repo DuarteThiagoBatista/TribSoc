@@ -1,15 +1,14 @@
 <template>
     <v-app-bar style="display: flex">
-        <v-btn @click="home = true;" to="/"
-        variant="plain">
+        <v-btn to="/">
             <v-img
-            :src="logo">
+            :src="Logo">
             </v-img>
         </v-btn>
         <v-divider vertical></v-divider>
-          <v-btn @click="home = false;" variant="plain" to="/converter" prepend-icon="mdi-cash" color="#1C3762"> Conversor </v-btn>
+          <v-btn to="/converter" prepend-icon="mdi-cash" color="#1C3762"> Conversor </v-btn>
           <v-divider vertical></v-divider>
-          <v-btn @click="home = false;" variant="plain" to="/companies" append-icon="mdi-briefcase" color="#1C3762"> Vagas </v-btn>
+          <v-btn to="/companies" append-icon="mdi-briefcase" color="#1C3762"> Vagas </v-btn>
 
         <div style="width: 100%; display: flex; justify-content: flex-end;">
           <v-btn color="#1C3762">
@@ -23,12 +22,12 @@
 </template>
 
 <script>
-import logo from "/public/logo.png";
+import Logo from "/public/logo.png";
 export default {
     name: "menuComponent",
 
     data: () =>({
-        logo,
+        Logo,
     })
 }
 </script>

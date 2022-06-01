@@ -23,11 +23,6 @@ const routes = [
     name: 'converter',
     component: () => import('../views/ConverterPage.vue')
   },
-  {
-  path: '/teste',
-  name: 'teste',
-  component: () => import('../views/TestePage.vue')
-}
 ]
 
 const router = createRouter({

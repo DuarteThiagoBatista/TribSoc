@@ -1,6 +1,4 @@
-
-# tribsoc
-
+# another-one
 
 ## Project setup
 ```

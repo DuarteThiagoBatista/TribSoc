@@ -33,9 +33,7 @@
   
   .img {
     /* width: 400px; */
-    height: 90px;
-    display: flex;
-    justify-items: center;
+    height: 120px;
   }
   
   .footer {

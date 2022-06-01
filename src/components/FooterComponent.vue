@@ -2,16 +2,27 @@
     <v-footer
     style="max-height: 50px; width: 100%; display: flex; justify-content: center; background-color: white;"
       elevation="5">
-        <v-btn  
-          icon="mdi-home"
+        <v-btn
+          append-icon="mdi-github"
           variant="plain"
-          to="/"
-        ></v-btn>
+          href="https://github.com/DuarteThiagoBatista/TribSoc"
+        >
+        <v-tooltip
+        activator="parent"
+        anchor="top"
+      >FrontEnd</v-tooltip>
+      </v-btn>
         <v-divider vertical></v-divider>
         <v-btn
-          icon="mdi-github"
+          prepend-icon="mdi-github"
           variant="plain"
-        ></v-btn>
+          href="https://github.com/DuarteThiagoBatista/TribSocBackEnd"
+        >
+        <v-tooltip
+        activator="parent"
+        anchor="top"
+      >BackEnd</v-tooltip>
+      </v-btn>
       <div>
         {{ new Date().getFullYear() }} — <strong>TribSOC</strong>
         </div>

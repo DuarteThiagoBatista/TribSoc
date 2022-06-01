@@ -1,5 +1,4 @@
 <template>
-
 <v-card class="caixa" style="padding: 15px; border-radius: 15px;">
     <v-lazy>
       <div style="display: flex; justify-content: center; flex-direction: column;">
@@ -34,7 +33,7 @@
       @click="
         resultado = false;
         valor = '';
-        sendData;
+        getBackData;
         alerts = true;
       "
       style="color: #1C3762"
@@ -71,15 +70,15 @@
 
 <script>
 import { createApp } from '@vue/runtime-dom';
-import axios from 'axios';
+//import axios from 'axios';
 import App from '@/App.vue';
-import VueAxios from 'vue-axios';
+//import VueAxios from 'vue-axios';
 import NoValue from './alerts/NoValueComponent.vue';
 import NoCurrency from './alerts/NoCurrencyComponent.vue';
 import InvalidValue from './alerts/InvalidValueComponent.vue'
 
 const app = createApp(App)
-app.use(VueAxios, axios);
+app.use();
 
 export default {
   data: () => ({
@@ -121,10 +120,5 @@ export default {
       return this.salarioBruto = await this.getBackData();
     }
   },
-  async sendData() {
-    const response = await this.axios.get(`https://trib-soc-back.herokuapp.com/converter/${this.valor}`);
-    console.log(response.data["valor_inserido"]);
-    return response.data["valor_inserido"];
-  }
 };
 </script>

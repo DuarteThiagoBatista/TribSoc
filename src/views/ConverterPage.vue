@@ -1,9 +1,7 @@
 <template>
-  <v-lazy>
-      <div class="" style="margin-bottom: 100px; width: 100%; display: flex; justify-content: center">
+      <div style="margin-bottom: 100px; width: 100%; display: flex; justify-content: center">
         <ConversorCaixa />
       </div>
-  </v-lazy>
 </template>
 
 <script>
@@ -16,11 +14,5 @@ export default {
 
   data: () => ({}),
   methods: {},
-  onBeforeMounted() {
-    this.getBackData();
-  },
-  onMounted() {
-    console.log(this.getBackData());
-  },
 };
 </script>

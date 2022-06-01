@@ -1,10 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <header>
-        <LogoComponent />
-      </header>
       <MenuComponent />
+      <LogoComponent />
       <router-view/>
     </v-main>
     <FooterComponent />
@@ -12,21 +10,23 @@
 </template>
 
 <script>
-import MenuComponent from "./components/MenuComponent.vue"
-import FooterComponent from "./components/FooterComponent.vue"
-import LogoComponent from "./components/LogoComponent.vue"
+import MenuComponent from './components/MenuComponent.vue'
+import LogoComponent from './components/LogoComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
+
 
 export default {
   name: 'App',
 
+  data: () => ({
+    //
+  }),
   components: {
     MenuComponent,
-    FooterComponent,
     LogoComponent,
-  },
-
-  data: () => ({
-    home: false,
-  }),
+    FooterComponent,
+    MenuComponent,
+    FooterComponent
+}
 }
 </script>
