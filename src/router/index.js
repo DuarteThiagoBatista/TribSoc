@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/RegisterPage.vue')
   },
   {
-    path: '/error',
+    path: '/notfound',
     name: 'notfound',
     component: () => import('../views/NotFoundPage.vue')
 }
