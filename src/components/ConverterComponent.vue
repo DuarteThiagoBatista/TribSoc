@@ -3,7 +3,7 @@
     <v-lazy>
       <div style="display: flex; justify-content: center; flex-direction: column;">
     <InvalidValue v-model="alerts" v-show="valor && !(valor > 0) && alerts"/>
-    <NoValue v-model="alerts" v-show="!valor && alerts"/>
+    <NoValue v-model="alerts" v-show="select && !valor && alerts"/>
     <NoCurrency v-model="alerts" v-show="!select && alerts"/>
     </div>
     </v-lazy>
