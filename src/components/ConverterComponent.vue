@@ -75,9 +75,7 @@
 
 <script>
 import { createApp } from '@vue/runtime-dom';
-//import axios from 'axios';
 import App from '@/App.vue';
-//import VueAxios from 'vue-axios';
 import NoValue from './alerts/NoValueComponent.vue';
 import NoCurrency from './alerts/NoCurrencyComponent.vue';
 import InvalidValue from './alerts/InvalidValueComponent.vue'
@@ -122,7 +120,8 @@ export default {
     },
     async showsalario() {
       this.resultado = true;
-      return this.salarioBruto = await this.getBackData();
+      this.salarioBruto = await this.getBackData();
+      return this.salarioBruto;
     }
   },
 };
