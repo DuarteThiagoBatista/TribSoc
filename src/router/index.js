@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/RegisterPage.vue')
   },
   {
-    path: '/notfound',
+    path: '/:pathMatch(.*)*',
     name: 'notfound',
     component: () => import('../views/NotFoundPage.vue')
 }
