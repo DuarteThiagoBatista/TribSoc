@@ -1,11 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <MenuComponent v-if="!($route.path === ('/register' || '/login'))"/>
-      <LogoComponent v-if="!($route.path === ('/register' || '/login'))"/>
       <router-view/>
     </v-main>
-    <FooterComponent v-if="!($route.path === ('/register' || '/login'))"/>
   </v-app>
 </template>
 

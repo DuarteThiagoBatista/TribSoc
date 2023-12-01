@@ -111,8 +111,15 @@ export default {
   methods: {
      async getBackData() {
       try {
-      const response = await fetch(`https://trib-soc-back.herokuapp.com/converter/${this.valor}`);
+      const response = await fetch(`https://us-central1-education-a96aa.cloudfunctions.net/converterDolarToReal`, {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+      },
+        body: JSON.stringify({dolar: this.valor})
+      });
       const data = await response.json();
+      console.log(data)
       return data.salario_liquido;
     } catch (error) {
       console.log(error)
